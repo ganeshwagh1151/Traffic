@@ -8,6 +8,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 import warnings
 warnings.filterwarnings("ignore")
+import matplotlib
+matplotlib.use('Agg')  # Use the 'Agg' backend (non-interactive) for headless environments
+import matplotlib.pyplot as plt
 
 # Load the data
 df = pd.read_csv('Car.csv')
